@@ -6,6 +6,7 @@
     <title>Guerrilla Lights Out | Arewa Games</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -25,26 +26,17 @@
         body { font-family: 'Courier New', monospace; }
     </style>
 </head>
-<body class="bg-stone-900 text-stone-300 flex flex-col min-h-screen">
-
-<nav class="fixed w-full z-50 p-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center bg-black/90 backdrop-blur rounded px-6 py-2 border-b-2 border-accent-game">
-        <a href="../game-studio.html" class="font-bold hover:text-white"><i class="fa-solid fa-arrow-left"></i> ABORTAR MISIÓN</a>
-        <span class="text-xs text-accent-game font-bold animate-pulse">TRANSMISSION DETECTED</span>
-    </div>
-</nav>
-
+<body class="bg-stone-900 text-stone-300 flex flex-col min-h-screen transition-colors duration-300">
+<div id="navbar-placeholder"></div>
 <div class="flex-grow">
     <header class="pt-32 pb-20 px-6 text-center">
         <div class="inline-block bg-red-900/30 text-red-500 border border-red-500 px-4 py-1 mb-6 text-xs font-bold tracking-widest">
             ESTADO: DISEÑO CLASIFICADO
         </div>
-
         <h1 class="text-5xl md:text-8xl font-black mb-2 text-white tracking-tighter">
             GUERRILLA <br> <span class="text-accent-game">LIGHTS OUT</span>
         </h1>
         <p class="text-lg text-stone-500 italic mb-12">"Turn that sh*t up!"</p>
-
         <div class="max-w-3xl mx-auto relative h-64 bg-stone-800 rounded-lg overflow-hidden border border-stone-700 mb-12 flex items-center justify-center">
             <div class="absolute w-32 h-32 bg-stone-700 left-20 top-10 rounded opacity-50 z-0 flex items-center justify-center border border-dashed border-stone-500">
                 <span class="text-xs text-stone-400">Capa 3: Escondite</span>
@@ -57,7 +49,6 @@
             </div>
         </div>
     </header>
-
     <section class="py-16 px-6 bg-stone-950">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-accent-game pl-4">Arsenal de Supervivencia</h2>
@@ -81,46 +72,7 @@
         </div>
     </section>
 </div>
-
-<footer class="bg-gray-900 border-t border-gray-800 pt-12 pb-8 mt-16">
-    <div class="max-w-7xl mx-auto px-6 font-sans"> <div class="grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-gray-700 pb-10">
-            <div class="col-span-2 md:col-span-2">
-                <h1 class="text-2xl font-black text-blue-400 mb-3">AREWA<span class="text-accent-game">LABS</span></h1>
-                <p class="text-slate-400 text-sm max-w-sm">
-                    Tecnología con propósito. Creando soluciones de código y juegos con impacto social y narrativo.
-                </p>
-            </div>
-            <div>
-                <h4 class="text-md font-semibold text-white mb-4">Recursos</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="../servicios.html" class="text-slate-400 hover:text-accent-social transition-colors">Consultoría</a></li>
-                    <li><a href="../blog.html" class="text-slate-400 hover:text-accent-social transition-colors">Blog & Research</a></li>
-                    <li><a href="../embajador.html" class="text-slate-400 hover:text-accent-social transition-colors">Programa Embajador</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-md font-semibold text-white mb-4">El Estudio</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="../about.html" class="text-slate-400 hover:text-accent-social transition-colors">Acerca de Arewa</a></li>
-                    <li><a href="../contact.html" class="text-slate-400 hover:text-accent-social transition-colors">Contacto</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-md font-semibold text-white mb-4">PILARES</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="../social-labs.html" class="text-slate-400 hover:text-accent-social transition-colors">Social Labs (Apps)</a></li>
-                    <li><a href="../game-studio.html" class="text-slate-400 hover:text-accent-game transition-colors">Game Studio</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="mt-8 text-center text-slate-500 text-xs">
-            &copy; <span id="current-year">2025</span> Arewa Labs. Todos los derechos reservados. | 
-            <a href="../legal.html" class="hover:text-white transition-colors">Aviso Legal & Privacidad</a>
-        </div>
-    </div>
-</footer>
-<script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-</script>
+<div id="footer-placeholder"></div>
+<script src="../script.js"></script>
 </body>
 </html>
