@@ -25,34 +25,83 @@
     <script src="script.js"></script> 
 </head>
 <body class="bg-white dark:bg-eco-bg text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
 <div id="navbar-placeholder"></div>
+
 <div class="h-16"></div>
+
 <main class="min-h-screen pt-16 pb-12 px-6">
     <div class="max-w-4xl mx-auto text-center mb-12">
         <h1 class="text-5xl sm:text-6xl font-black mb-4">Ponte en <span class="text-blue-400">Contacto</span></h1>
         <p class="text-xl text-slate-400">¿Tienes una idea, un proyecto o una duda técnica? Estamos aquí para escucharte.</p>
     </div>
+
     <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        
         <div class="space-y-8">
+            
             <div>
                 <h3 class="text-2xl font-bold text-white mb-3">Canales Directos</h3>
-                <p class="text-slate-400 mb-4">Preferimos la comunicación asíncrona pero efectiva. Responderemos en menos de 48 horas.</p>
+                <p class="text-slate-400 mb-6">Preferimos la comunicación asíncrona pero efectiva.</p>
+                
                 <div class="space-y-4">
-                    <div class="flex items-center space-x-3 text-slate-300">
-                        <span class="bg-eco-surface p-3 rounded-lg text-blue-400">✉️</span>
-                        <span>hola@arewalabs.com</span>
-                    </div>
-                    <div class="flex items-center space-x-3 text-slate-300">
-                        <span class="bg-eco-surface p-3 rounded-lg text-accent-game">🎮</span>
-                        <span>Discord: arewa_studio</span>
-                    </div>
+                    <a href="mailto:hola@arewalabs.com" class="flex items-center space-x-3 text-slate-300 hover:text-white transition-colors group">
+                        <div class="bg-eco-surface p-3 rounded-lg text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <span class="font-medium">hola@arewalabs.com</span>
+                    </a>
+
+                    <a href="https://discord.gg/6S9CpsDpCu" target="_blank" class="flex items-center space-x-3 text-slate-300 hover:text-white transition-colors group">
+                        <div class="bg-eco-surface p-3 rounded-lg text-[#5865F2] group-hover:bg-[#5865F2] group-hover:text-white transition-colors">
+                            <i class="fa-brands fa-discord"></i>
+                        </div>
+                        <span class="font-medium">Servidor de Discord</span>
+                    </a>
                 </div>
             </div>
-            <div class="bg-eco-surface p-6 rounded-2xl border border-gray-700">
+
+            <div class="border-t border-gray-700"></div>
+
+            <div>
+                <h4 class="font-bold text-white mb-4 flex items-center gap-2">
+                    <span class="text-accent-social">Sigue a Lunu</span> (Embajador)
+                </h4>
+                <div class="flex flex-wrap gap-3">
+                    
+                    <a href="https://www.youtube.com/@NadieSoyYo-k2x" target="_blank" class="w-10 h-10 rounded-lg bg-eco-surface flex items-center justify-center text-slate-400 hover:bg-red-600 hover:text-white transition-all transform hover:-translate-y-1" title="YouTube">
+                        <i class="fa-brands fa-youtube text-lg"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@lunu.soy.yo" target="_blank" class="w-10 h-10 rounded-lg bg-eco-surface flex items-center justify-center text-slate-400 hover:bg-black hover:text-pink-500 hover:border hover:border-pink-500 transition-all transform hover:-translate-y-1" title="TikTok">
+                        <i class="fa-brands fa-tiktok text-lg"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/lunu.soy.yo/" target="_blank" class="w-10 h-10 rounded-lg bg-eco-surface flex items-center justify-center text-slate-400 hover:bg-gradient-to-tr hover:from-yellow-500 hover:to-purple-600 hover:text-white transition-all transform hover:-translate-y-1" title="Instagram">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=61584530974670" target="_blank" class="w-10 h-10 rounded-lg bg-eco-surface flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all transform hover:-translate-y-1" title="Facebook">
+                        <i class="fa-brands fa-facebook-f text-lg"></i>
+                    </a>
+
+                    <a href="https://x.com/LunuSoyYo" target="_blank" class="w-10 h-10 rounded-lg bg-eco-surface flex items-center justify-center text-slate-400 hover:bg-black hover:text-white hover:border hover:border-gray-600 transition-all transform hover:-translate-y-1" title="X (Twitter)">
+                        <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-39.1L364.4 421.8z"/></svg>
+                    </a>
+
+                    <a href="https://ko-fi.com/lunusoyyo" target="_blank" class="w-10 h-10 rounded-lg bg-eco-surface flex items-center justify-center text-slate-400 hover:bg-[#13C3FF] hover:text-white transition-all transform hover:-translate-y-1" title="Ko-fi (Donar)">
+                        <i class="fa-solid fa-mug-hot text-lg"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="bg-eco-surface p-6 rounded-2xl border border-gray-700 mt-6">
                 <h4 class="font-bold text-white mb-2">Horario de Atención</h4>
                 <p class="text-sm text-slate-400 italic">Operamos bajo un esquema de trabajo remoto global, pero atendemos principalmente de Lunes a Viernes (GMT-6).</p>
             </div>
         </div>
+
         <div class="bg-eco-surface p-8 rounded-3xl shadow-2xl border border-gray-700">
             <form action="#" method="POST" class="space-y-5">
                 <div>
@@ -83,7 +132,9 @@
         </div>
     </div>
 </main>
+
 <div id="footer-placeholder"></div>
 <script src="script.js"></script>
+
 </body>
 </html>
