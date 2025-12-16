@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arewa Labs | Social Labs</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'eco-bg': '#0F172A',
+                        'eco-surface': '#1E293B',
+                        'accent-social': '#38BDF8',
+                        'accent-game': '#F97316',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> 
+</head>
+<body class="bg-white dark:bg-eco-bg text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+<nav class="fixed w-full z-50 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4"> 
+        <div class="flex items-center justify-between h-12 bg-gray-900 dark:bg-gray-900 shadow-xl rounded-full px-4 py-1 border border-gray-700">
+            <a href="index.html" class="flex-shrink-0">
+                <h1 class="text-lg font-black text-blue-400">AREWA<span class="text-accent-game">LABS</span></h1>
+            </a>
+            <div class="hidden sm:flex items-center space-x-2 ml-auto"> 
+                <div class="flex items-center space-x-1.5">
+                    <a href="index.html" class="menu-item-capsule">Home</a> 
+                    
+                    <div class="relative group">
+                        <button class="menu-item-capsule flex items-center active-item">
+                            Social Labs <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="dropdown-content left-0 w-48 shadow-xl ring-1 ring-black ring-opacity-5">
+                            <a href="social-labs.html" class="dropdown-link active-item">¿Por qué Social Labs?</a>
+                            <a href="apps/keyah.html" class="dropdown-link">Keyah</a>
+                            <a href="apps/machi-ai.html" class="dropdown-link">Machi-AI</a>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <button class="menu-item-capsule flex items-center">
+                            Game Studio <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="dropdown-content left-0 w-48 shadow-xl ring-1 ring-black ring-opacity-5">
+                            <a href="game-studio.html" class="dropdown-link">Nuestra Filosofía</a>
+                            <a href="apps/escuadron.html" class="dropdown-link">Escuadron 201</a>
+                            <a href="apps/guerrilla.html" class="dropdown-link">Guerrilla Lights Out</a>
+                            <a href="apps/4-chalanes.html" class="dropdown-link">4 Chalanes</a>
+                        </div>
+                    </div>
+                    
+                    <a href="servicios.html" class="menu-item-capsule">Servicios</a>
+                    <a href="blog.html" class="menu-item-capsule">Blog</a>
+                    <a href="embajador.html" class="menu-item-capsule">Embajador</a>
+                    <a href="contact.html" class="menu-item-capsule">Contacto</a>
+                    
+                    <a href="about.html" class="text-sm px-3 py-1.5 rounded-full font-bold bg-blue-600 hover:bg-blue-700 text-white transition-all duration-200">About</a>
+                </div>
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-700 transition-colors duration-200 flex-shrink-0 ml-2">
+                    <svg id="theme-icon-sun" class="hidden w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    <svg id="theme-icon-moon" class="w-5 h-5 text-gray-500 dark:text-slate-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="h-16"></div>
+
+<main>
+    <section class="text-center pt-16 pb-12 px-6">
+        <p class="text-lg font-semibold text-accent-social mb-2">SOCIAL LABS</p>
+        <h1 class="text-5xl sm:text-6xl font-black mb-4">
+            Innovación con <span class="text-accent-social">Ciberseguridad y Propósito</span>
+        </h1>
+        <p class="text-xl text-slate-400 max-w-3xl mx-auto">
+            Diseñamos e implementamos software que resuelve problemas sociales, priorizando la privacidad y la robustez técnica.
+        </p>
+    </section>
+
+    <section class="py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-white mb-8 border-b border-accent-social pb-2">Nuestras Aplicaciones</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-eco-surface rounded-xl overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-accent-social/50 hover:scale-[1.02]">
+                    <div class="h-48 bg-gray-700/50 flex items-center justify-center">
+                        <i class="fa-solid fa-handshake text-8xl text-accent-social"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 leading-tight">Keyah: App de apoyo a asociaciones civiles</h3>
+                        <p class="text-xs font-semibold text-accent-social mb-3 uppercase tracking-wide">
+                            Certificadas con AIT, Donataria Autorizada y CLUNI
+                        </p>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Más que una app de donaciones, Keyah conecta a ciudadanos con Asociaciones Civiles verificadas. Nuestra meta es la **Transparencia Radical**: rastrea exactamente dónde termina cada peso donado y compara su impacto real vs. el gasto gubernamental.
+                        </p>
+                        <a href="apps/keyah.html" class="text-accent-social font-semibold hover:text-white transition-colors">Ver Detalles »</a>
+                    </div>
+                </div>
+
+                <div class="bg-eco-surface rounded-xl overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-accent-social/50 hover:scale-[1.02]">
+                    <div class="h-48 bg-gray-700/50 flex items-center justify-center">
+                        <i class="fa-solid fa-graduation-cap text-8xl text-accent-social"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Machi AI: Aprende riendo, domina los números</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Una herramienta AI para que niños y adultos aprendan matemáticas sin dolor, justo lo que los profesores pidieron.
+                        </p>
+                        <a href="apps/machi-ai.html" class="text-accent-social font-semibold hover:text-white transition-colors">Ver Detalles »</a>
+                    </div>
+                </div>
+                
+                <div class="bg-eco-surface rounded-xl overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-accent-game/50 hover:scale-[1.02]">
+                    <div class="h-48 bg-gray-700/50 flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-chart text-8xl text-accent-game"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Investigación y Blog</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Artículos sobre privacidad, tecnologías de código abierto y cómo el desarrollo impacta a la sociedad.
+                        </p>
+                        <a href="blog.html" class="text-accent-game font-semibold hover:text-white transition-colors">Leer Artículos »</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="bg-gray-900 border-t border-gray-800 pt-12 pb-8 mt-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-gray-700 pb-10">
+            
+            <div class="col-span-2 md:col-span-2">
+                <h1 class="text-2xl font-black text-blue-400 mb-3">AREWA<span class="text-accent-game">LABS</span></h1>
+                <p class="text-slate-400 text-sm max-w-sm">
+                    Tecnología con propósito. Creando soluciones de código y juegos con impacto social y narrativo.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-md font-semibold text-white mb-4">Recursos</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="servicios.html" class="text-slate-400 hover:text-accent-social transition-colors">Consultoría</a></li>
+                    <li><a href="blog.html" class="text-slate-400 hover:text-accent-social transition-colors">Blog & Research</a></li>
+                    <li><a href="embajador.html" class="text-slate-400 hover:text-accent-social transition-colors">Programa Embajador</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-md font-semibold text-white mb-4">El Estudio</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html" class="text-slate-400 hover:text-accent-social transition-colors">Acerca de Arewa</a></li>
+                    <li><a href="contact.html" class="text-slate-400 hover:text-accent-social transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-md font-semibold text-white mb-4">PILARES</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="social-labs.html" class="text-slate-400 hover:text-accent-social transition-colors">Social Labs (Apps)</a></li>
+                    <li><a href="game-studio.html" class="text-slate-400 hover:text-accent-game transition-colors">Game Studio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center text-slate-500 text-xs">
+            &copy; <span id="current-year-footer-social">2025</span> Arewa Labs. Todos los derechos reservados. | 
+            <a href="legal.html" class="hover:text-white transition-colors">Aviso Legal & Privacidad</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('current-year-footer-social').textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
