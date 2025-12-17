@@ -13,8 +13,8 @@
                     colors: {
                         'eco-bg': '#0F172A',
                         'eco-surface': '#1E293B',
-                        'accent-social': '#38BDF8',
-                        'accent-game': '#F97316',
+                        'accent-social': '#38BDF8', // Azul (Tech/Social)
+                        'accent-game': '#F97316',   // Naranja (Gaming)
                     }
                 }
             }
@@ -28,62 +28,43 @@
 <div class="h-16"></div>
 <main>
     <section class="text-center pt-16 pb-12 px-6">
-        <p class="text-lg font-semibold text-accent-social mb-2">RESEARCH & ANÁLISIS</p>
-        <h1 class="text-5xl sm:text-6xl font-black mb-4">
-            Blog Técnico y <span class="text-accent-social">Reportes de Impacto</span>
+        <p class="text-lg font-semibold text-accent-social mb-2 tracking-widest">RESEARCH & ANÁLISIS</p>
+        <h1 class="text-4xl sm:text-6xl font-black mb-4">
+            Bitácora de <span class="text-accent-social">Arewa</span>
         </h1>
-        <p class="text-xl text-slate-400 max-w-4xl mx-auto">
-            Exploramos temas que van desde la ciberseguridad y el código abierto hasta el diseño narrativo en videojuegos.
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+            Donde la tecnología choca con la sociología. Artículos sobre IA, desarrollo de juegos y el futuro del trabajo.
         </p>
     </section>
-    <section class="py-16 px-6">
-        <div class="max-w-4xl mx-auto">
+    <section class="pb-24 px-6">
+        <div class="max-w-6xl mx-auto">
             
-            <div class="space-y-10">
-                
-                <a href="blog/post1.html" class="block bg-eco-surface rounded-xl p-6 shadow-xl transition-all duration-300 hover:shadow-accent-social/50 hover:border-accent-social border border-transparent">
-                    <h3 class="text-2xl font-bold text-white mb-2">
-                        El Rol del Código Abierto en la Privacidad Digital
-                    </h3>
-                    <p class="text-sm text-accent-social mb-3">
-                        <span class="font-semibold">Ciberseguridad & Open Source</span> — 15 de Octubre, 2025
-                    </p>
-                    <p class="text-slate-400">
-                        Análisis profundo sobre cómo las herramientas como Keyah garantizan la confianza a través de la transparencia de su código.
-                    </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="blog/la-ia-robo-a-mi-hombre.html" class="group md:col-span-2 lg:col-span-3 relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 hover:shadow-accent-social/40 border border-slate-700 hover:border-accent-social block bg-eco-surface">
+                    <div class="flex flex-col md:flex-row h-full">
+                        <div class="md:w-1/2 h-64 md:h-auto bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center relative overflow-hidden">
+                            <span class="text-9xl opacity-20 select-none">🤖</span>
+                            <div class="absolute top-4 left-4 bg-accent-social text-eco-bg font-bold text-xs px-3 py-1 rounded-full uppercase">
+                                Nuevo • Cultura Digital
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 group-hover:text-accent-social transition-colors">
+                                La IA se robó a mi hombre (y su empleo)
+                            </h2>
+                            <p class="text-slate-400 mb-6 text-lg">
+                                Olvida las 4 revoluciones industriales. Descubre por qué el último trabajo en desaparecer no será el de programador, sino el de "pareja humana".
+                            </p>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <span class="font-semibold text-slate-300">Por Lunu</span>
+                                <span class="mx-2">•</span>
+                                <span>Lectura de 9 min</span>
+                            </div>
+                        </div>
+                    </div>
                 </a>
-                <a href="blog/post2.html" class="block bg-eco-surface rounded-xl p-6 shadow-xl transition-all duration-300 hover:shadow-accent-game/50 hover:border-accent-game border border-transparent">
-                    <h3 class="text-2xl font-bold text-white mb-2">
-                        Diseño Narrativo: Creando Historias en Juegos Indie
-                    </h3>
-                    <p class="text-sm text-accent-game mb-3">
-                        <span class="font-semibold">Game Studio & Diseño</span> — 5 de Noviembre, 2025
-                    </p>
-                    <p class="text-slate-400">
-                        Nuestra filosofía detrás de los mundos inmersivos y cómo el código moldea la experiencia narrativa.
-                    </p>
-                </a>
-                <a href="blog/post3.html" class="block bg-eco-surface rounded-xl p-6 shadow-xl transition-all duration-300 hover:shadow-blue-400/50 hover:border-blue-400 border border-transparent">
-                    <h3 class="text-2xl font-bold text-white mb-2">
-                        Mejores Prácticas de Desarrollo para ONGs
-                    </h3>
-                    <p class="text-sm text-blue-400 mb-3">
-                        <span class="font-semibold">Consultoría & Impacto</span> — 28 de Septiembre, 2025
-                    </p>
-                    <p class="text-slate-400">
-                        Una guía sobre la elección de tecnologías y la implementación de sistemas seguros con presupuestos ajustados.
-                    </p>
-                </a>
-            </div>
-            <div class="text-center mt-12">
-                <a href="#" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 hover:bg-blue-700">
-                    Ver Artículos Anteriores
-                </a>
-            </div>
-        </div>
-    </section>
-</main>
+                </div> ```
 <div id="footer-placeholder"></div>
-<script src="script.js"></script>
 </body>
 </html>
