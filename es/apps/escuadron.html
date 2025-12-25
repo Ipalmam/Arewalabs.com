@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <link rel="alternate" hreflang="en" href="https://arewalabs.com/en/apps/escuadron.html" />
+    <link rel="alternate" hreflang="es" href="https://arewalabs.com/es/apps/escuadron.html" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuadrón 201 | Arewa Games</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'eco-bg': '#0F172A',
+                        'eco-surface': '#1E293B',
+                        'accent-game': '#F97316',
+                        'accent-social': '#38BDF8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .font-pixel { font-family: 'Press Start 2P', cursive; }
+    </style>
+</head>
+<body class="bg-eco-bg text-slate-100 flex flex-col min-h-screen transition-colors duration-300">
+<div id="navbar-placeholder"></div>
+<div class="flex-grow">
+    <header class="pt-32 pb-20 px-6 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')]"></div>
+        
+        <div class="inline-block bg-yellow-500/20 text-yellow-400 border border-yellow-500 px-4 py-1 rounded mb-6 font-mono text-xs">
+            <i class="fa-solid fa-helmet-safety"></i> DEVELOPMENT STAGE: ALPHA (50%)
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black mb-4 uppercase italic">Escuadrón <span class="text-accent-game">201</span></h1>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+            El MetroShmupVania que redefine el género. 8 modos de juego, un mapa interconectado y el orgullo de la Fuerza Aérea Mexicana.
+        </p>
+        <div class="max-w-4xl mx-auto bg-black aspect-video rounded-xl border-4 border-gray-800 flex items-center justify-center relative overflow-hidden shadow-2xl shadow-accent-game/20">
+            <div class="text-center z-10">
+                <i class="fa-solid fa-jet-fighter-up text-6xl text-accent-game mb-4 animate-pulse"></i>
+                <p class="font-pixel text-xs text-white">GAMEPLAY FOOTAGE PENDING</p>
+            </div>
+            <div class="absolute inset-0 opacity-20" style="background: linear-gradient(transparent 95%, #F97316 50%); background-size: 100% 40px;"></div>
+        </div>
+    </header>
+    <section class="py-16 px-6 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-white">Caos Multigénero</h2>
+                <p class="text-slate-400 mb-6">
+                    No es solo disparar. Es adaptarte. Viaja por túneles que transforman la jugabilidad:
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-plane-up text-accent-game"></i> <span><strong>Aero Fighters Mode:</strong> Vertical Shmup clásico.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-shield-halved text-accent-game"></i> <span><strong>Tank Mode:</strong> Defensa terrestre tipo Space Invaders.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-rocket text-accent-game"></i> <span><strong>StarFox Mode:</strong> Rail Shooter 3D.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-kiwi-bird text-accent-game"></i> <span><strong>Flappy Mode:</strong> Evasión de alta precisión.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700">
+                <h3 class="text-xl font-bold mb-4 text-white"><i class="fa-solid fa-sliders"></i> Motor de Estilos</h3>
+                <p class="text-slate-400 text-sm mb-6">
+                    ¿Nostalgia o Modernidad? El usuario decide la estética en tiempo real.
+                </p>
+                <div class="grid grid-cols-2 gap-4 text-center">
+                    <div class="p-4 bg-black rounded border border-gray-600">
+                        <span class="font-pixel text-xs text-green-400">PIXEL ART</span>
+                    </div>
+                    <div class="p-4 bg-gray-900 rounded border border-accent-game shadow-[0_0_10px_rgba(249,115,22,0.5)]">
+                        <span class="font-bold text-xs text-accent-game">NEON GLOW</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div id="footer-placeholder"></div>
+<script src="../../script.js"></script>
+</body>
+</html>

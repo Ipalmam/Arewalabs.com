@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <link rel="alternate" hreflang="en" href="https://arewalabs.com/en/home.html" />
+    <link rel="alternate" hreflang="es" href="https://arewalabs.com/es/home.html" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arewa Labs | Tecnología con Propósito</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'eco-bg': '#0F172A',
+                        'eco-surface': '#1E293B',
+                        'accent-social': '#38BDF8',
+                        'accent-game': '#F97316',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script> 
+</head>
+<body class="bg-white dark:bg-eco-bg text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<div id="navbar-placeholder"></div>
+<div class="h-16"></div>
+<main>
+    <section id="hero" class="min-h-[85vh] flex items-center justify-center text-center px-6 pt-24 pb-16">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-extrabold leading-tight mb-6">
+                Resolvemos <span class="text-accent-social">Retos Sociales</span> con Código,
+                <span class="text-accent-game">Jugando</span>.
+            </h1>
+            
+            <p class="text-xl sm:text-2xl text-slate-400 max-w-3xl mx-auto mb-10">
+                Arewa Labs es un estudio de desarrollo que une ciberseguridad, apps de impacto social, y la creatividad de los juegos independientes.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                
+                <a href="social-labs.html" 
+                    class="bg-accent-social text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    Explorar Social Labs
+                </a>
+                
+                <a href="game-studio.html" 
+                    class="bg-accent-game text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    Ver Juegos Independientes
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="bento-blocks" class="py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-eco-surface rounded-3xl p-8 shadow-2xl transition-all duration-300 hover:shadow-accent-social/50 hover:-translate-y-1">
+                <h3 class="text-3xl font-extrabold text-accent-social mb-4">Social Labs</h3>
+                <p class="text-slate-300 mb-4">
+                    Desarrollo de aplicaciones con foco en ciberseguridad, privacidad y consultoría para comunidades y empresas con propósito.
+                </p>
+                <a href="social-labs.html" class="text-accent-social font-semibold hover:text-white transition-colors flex items-center">
+                    Conoce nuestras Apps 
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+            <div class="bg-eco-surface rounded-3xl p-8 shadow-2xl transition-all duration-300 hover:shadow-blue-500/50 hover:-translate-y-1">
+                <h3 class="text-3xl font-extrabold text-blue-400 mb-4">Consultoría</h3>
+                <p class="text-slate-300 mb-4">
+                    Ofrecemos servicios profesionales de desarrollo a medida y auditorías de seguridad informática para ONGs y PyMES.
+                </p>
+                <a href="servicios.html" class="text-blue-400 font-semibold hover:text-white transition-colors flex items-center">
+                    Ver Portafolio de Servicios 
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+            <div class="bg-eco-surface rounded-3xl p-8 shadow-2xl transition-all duration-300 hover:shadow-accent-game/50 hover:-translate-y-1">
+                <h3 class="text-3xl font-extrabold text-accent-game mb-4">Game Studio</h3>
+                <p class="text-slate-300 mb-4">
+                    Creación de juegos independientes (Indie) con narrativas profundas y mecánicas experimentales, enfocados en plataformas móviles.
+                </p>
+                <a href="game-studio.html" class="text-accent-game font-semibold hover:text-white transition-colors flex items-center">
+                    Conoce nuestros Juegos 
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    // Script para el toggle de tema
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    const sunIcon = document.getElementById('theme-icon-sun');
+    const moonIcon = document.getElementById('theme-icon-moon');
+    themeToggle.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        sunIcon.classList.toggle('hidden');
+        moonIcon.classList.toggle('hidden');
+        // Guardar preferencia
+        if (html.classList.contains('dark')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+    // Cargar preferencia al inicio
+    if (localStorage.getItem('theme') === 'light') {
+        html.classList.remove('dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+    }
+</script>
+</body>
+<div id="footer-placeholder"></div>
+<script src="../script.js"></script>
+</html>

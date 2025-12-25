@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <link rel="alternate" hreflang="en" href="https://arewalabs.com/en/blog.html" />
+    <link rel="alternate" hreflang="es" href="https://arewalabs.com/es/blog.html" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arewa Labs | Blog & Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'eco-bg': '#0F172A',
+                        'eco-surface': '#1E293B',
+                        'accent-social': '#38BDF8',
+                        'accent-game': '#F97316',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-white dark:bg-eco-bg text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+<div id="navbar-placeholder"></div>
+<div class="h-16"></div>
+
+<main>
+    <section class="text-center pt-16 pb-12 px-6">
+        <p class="text-lg font-semibold text-accent-social mb-2 tracking-widest">RESEARCH & ANALYSIS</p>
+        <h1 class="text-4xl sm:text-6xl font-black mb-4">
+            Arewa <span class="text-accent-social">Logbook</span>
+        </h1>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+            Where technology crashes into sociology. Articles on AI, project development, and the future of work.
+        </p>
+    </section>
+
+    <section class="pb-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <a href="blog/ia-el-martillo-digital.html" class="group md:col-span-2 lg:col-span-3 relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 hover:shadow-green-500/20 border border-slate-700 hover:border-green-500 block bg-eco-surface">
+                    <div class="flex flex-col md:flex-row h-full">
+                        <div class="md:w-1/2 h-64 md:h-auto bg-gradient-to-br from-green-900/40 to-slate-900 flex items-center justify-center relative overflow-hidden">
+                            <span class="text-9xl opacity-20 select-none">🔨</span>
+                            <div class="absolute top-4 left-4 bg-green-500 text-eco-bg font-bold text-xs px-3 py-1 rounded-full uppercase">
+                                Recent • Tools
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 group-hover:text-green-400 transition-colors">
+                                AI: The Digital Hammer for the Nobodies… Do you know how to strike?
+                            </h2>
+                            <p class="text-slate-400 mb-6 text-lg">
+                                AI isn't a genie granting wishes. It’s a digital machete. Learn how to use it as a precision tool before you cut a finger off.
+                            </p>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <span class="font-semibold text-slate-300">By Lunu</span>
+                                <span class="mx-2">•</span>
+                                <span>4 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="blog/la-ia-robo-a-mi-hombre.html" class="group relative overflow-hidden rounded-2xl border border-slate-700 hover:border-accent-social bg-eco-surface transition-all">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center text-6xl">🤖</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent-social">AI Stole My Man (and his job)</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-3">
+                            An analysis on why AI will replace human partners sooner than it will replace programmers. Klarna, loneliness, and Japan.
+                        </p>
+                        <div class="flex items-center text-xs text-slate-500">
+                            <span>4 min read</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<div id="footer-placeholder"></div>
+<script src="../script.js"></script>
+</body>
+</html>

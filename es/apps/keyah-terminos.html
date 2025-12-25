@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <link rel="alternate" hreflang="en" href="https://arewalabs.com/en/apps/keyah-terminos.html" />
+    <link rel="alternate" hreflang="es" href="https://arewalabs.com/es/keyah-terminos.html" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones | Keyah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'eco-bg': '#0F172A',
+                        'eco-surface': '#1E293B',
+                        'accent-social': '#38BDF8',
+                        'accent-game': '#F97316',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-eco-bg text-slate-900 dark:text-slate-100 transition-colors duration-300 flex flex-col min-h-screen">
+
+<div id="navbar-placeholder"></div>
+
+<div class="flex-grow">
+    <header class="relative pt-32 pb-12 overflow-hidden text-center px-6">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 opacity-20">
+            <div class="absolute top-[-10%] right-[10%] w-96 h-96 bg-purple-600 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-[-10%] left-[10%] w-72 h-72 bg-accent-social rounded-full blur-[100px]"></div>
+        </div>
+        
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs font-bold uppercase tracking-wider mb-6">
+            <i class="fa-solid fa-scale-balanced text-purple-400"></i> Legal
+        </div>
+        <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">
+            Términos y <span class="text-accent-social text-glow">Condiciones</span>
+        </h1>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+            Reglas de uso y deslinde de responsabilidad financiera.
+        </p>
+    </header>
+
+    <section class="pb-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            
+            <div class="bg-eco-surface rounded-3xl p-8 md:p-12 border border-gray-700 shadow-2xl relative overflow-hidden">
+                
+                <div class="absolute top-0 right-0 p-6 opacity-10 pointer-events-none">
+                    <i class="fa-solid fa-file-contract text-9xl text-purple-500"></i>
+                </div>
+
+                <div class="mb-10 relative z-10">
+                    <h2 class="text-2xl font-bold text-white mb-3">1. Aceptación</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Al descargar y utilizar <strong>Keyah</strong>, usted acepta estos términos. Si no está de acuerdo con alguna parte de los mismos, por favor absténgase de utilizar la aplicación.
+                    </p>
+                </div>
+
+                <div class="mb-10 relative z-10">
+                    <h2 class="text-2xl font-bold text-white mb-3">2. Naturaleza del Servicio</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Keyah funciona exclusivamente como una plataforma de <strong>vinculación y directorio digital</strong>. Su función es facilitar la conexión entre potenciales donantes y Asociaciones Civiles verificadas mediante el uso de tecnología.
+                    </p>
+                </div>
+
+                <div class="mb-10 p-6 rounded-2xl bg-red-900/20 border border-red-500/30 relative z-10">
+                    <h2 class="text-2xl font-bold text-red-400 mb-4 flex items-center gap-3">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        3. Renuncia de Responsabilidad Financiera
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed mb-4">
+                        El usuario reconoce y acepta expresamente que:
+                    </p>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-xmark text-red-400 mt-1"></i>
+                            <span><strong>Keyah NO es una entidad financiera:</strong> No somos un banco, procesador de pagos, ni intermediario de fondos.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-xmark text-red-400 mt-1"></i>
+                            <span><strong>Keyah NO toca el dinero:</strong> Todas las donaciones se realizan directamente entre el Usuario y la Asociación Civil utilizando servicios externos (Apps Bancarias, CoDi®, DiMo®, SPEI®) regulados por el Banco de México.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-shield text-red-400 mt-1"></i>
+                            <span><strong>Deslinde:</strong> Arewa Labs no se hace responsable por errores en la transferencia (montos equivocados, cuentas erróneas), fallas en las aplicaciones bancarias de terceros, ni por el destino final de los fondos donados.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-10 relative z-10">
+                    <h2 class="text-2xl font-bold text-white mb-3">4. Almacenamiento Local y Pérdida de Datos</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Al tratarse de una aplicación de arquitectura "Local-First", el usuario comprende que <strong>Arewa Labs no cuenta con copias de seguridad (backups)</strong> de su información en la nube. Es responsabilidad del usuario cuidar su dispositivo. En caso de pérdida, robo del celular o desinstalación de la App, la información guardada en Keyah (historial, favoritos) se perderá permanentemente.
+                    </p>
+                </div>
+
+                <div class="relative z-10">
+                    <h2 class="text-2xl font-bold text-white mb-3">5. Marcas Registradas</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Las marcas CoDi®, DiMo® y SPEI® son propiedad del Banco de México. Su mención en esta aplicación es únicamente informativa para describir los métodos de transferencia disponibles. Keyah no tiene afiliación directa con dichas entidades.
+                    </p>
+                </div>
+
+                <div class="mt-16 pt-8 border-t border-slate-700 text-center text-slate-500 text-sm">
+                    Última actualización: Diciembre 2025
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="keyah.html" class="text-slate-400 hover:text-white transition-colors flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-arrow-left"></i> Volver a Keyah
+                </a>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="../../script.js"></script>
+</body>
+</html>

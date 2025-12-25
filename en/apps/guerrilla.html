@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <link rel="alternate" hreflang="en" href="https://arewalabs.com/en/apps/guerrilla.html" />
+    <link rel="alternate" hreflang="es" href="https://arewalabs.com/es/apps/guerrilla.html" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guerrilla Lights Out | Arewa Games</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'eco-bg': '#0F172A',
+                        'eco-surface': '#1E293B',
+                        'accent-game': '#F97316',
+                        'accent-social': '#38BDF8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Courier New', monospace; }
+    </style>
+</head>
+<body class="bg-stone-900 text-stone-300 flex flex-col min-h-screen transition-colors duration-300">
+<div id="navbar-placeholder"></div>
+<div class="flex-grow">
+    <header class="pt-32 pb-20 px-6 text-center">
+        <div class="inline-block bg-red-900/30 text-red-500 border border-red-500 px-4 py-1 mb-6 text-xs font-bold tracking-widest">
+            STATUS: CLASSIFIED DESIGN
+        </div>
+        <h1 class="text-5xl md:text-8xl font-black mb-2 text-white tracking-tighter">
+            GUERRILLA <br> <span class="text-accent-game">LIGHTS OUT</span>
+        </h1>
+        <p class="text-lg text-stone-500 italic mb-12">"Turn that sh*t up!"</p>
+        <div class="max-w-3xl mx-auto relative h-64 bg-stone-800 rounded-lg overflow-hidden border border-stone-700 mb-12 flex items-center justify-center">
+            <div class="absolute w-32 h-32 bg-stone-700 left-20 top-10 rounded opacity-50 z-0 flex items-center justify-center border border-dashed border-stone-500">
+                <span class="text-xs text-stone-400">Layer 3: Hiding Spot</span>
+            </div>
+            <div class="absolute w-32 h-32 bg-accent-game left-1/2 -translate-x-1/2 top-16 rounded shadow-lg z-10 flex items-center justify-center font-bold text-black">
+                PLAYER
+            </div>
+            <div class="absolute w-full h-24 bg-stone-900 bottom-0 z-20 opacity-90 flex items-center justify-center border-t border-accent-game">
+                <span class="text-xs text-accent-game">Layer 1: Bushes / Visual Cover</span>
+            </div>
+        </div>
+    </header>
+    <section class="py-16 px-6 bg-stone-950">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-accent-game pl-4">Survival Arsenal</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-stone-900 p-6 border border-stone-800 hover:border-accent-game transition-colors">
+                    <i class="fa-solid fa-xmarks-lines text-4xl text-stone-500 mb-4"></i>
+                    <h3 class="text-white font-bold">Machete</h3>
+                    <p class="text-sm text-stone-500">Silent. Lethal at close range.</p>
+                </div>
+                <div class="bg-stone-900 p-6 border border-stone-800 hover:border-accent-game transition-colors">
+                    <i class="fa-solid fa-bomb text-4xl text-stone-500 mb-4"></i>
+                    <h3 class="text-white font-bold">Mines</h3>
+                    <p class="text-sm text-stone-500">Zone control. Place them behind visual layers.</p>
+                </div>
+                <div class="bg-stone-900 p-6 border border-stone-800 hover:border-accent-game transition-colors">
+                    <i class="fa-solid fa-gun text-4xl text-stone-500 mb-4"></i>
+                    <h3 class="text-white font-bold">Pistol</h3>
+                    <p class="text-sm text-stone-500">Scarce ammo. High noise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div id="footer-placeholder"></div>
+<script src="../../script.js"></script>
+</body>
+</html>
