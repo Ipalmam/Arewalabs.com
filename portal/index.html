@@ -236,10 +236,14 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-    // 1. CONFIGURACIÓN (Rellena esto mañana)
+    // 1. CONFIGURACIÓN
     const supabaseUrl = 'https://ahjraveozlvkiamtpppy.supabase.co'; 
+    // NOTA: Tu llave 'sb_publishable...' se ve inusual (suelen empezar con 'ey...'), 
+    // pero si esa es la que copiaste de "anon public", úsala. Si falla la conexión, revisa eso.
     const supabaseKey = 'sb_publishable_P3lMcR-olq_NzWq5Qb4P2w_caDopNPK';
-    const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+    
+    // --- CORRECCIÓN AQUÍ: Cambiamos el nombre a 'client' para no chocar ---
+    const client = supabase.createClient(supabaseUrl, supabaseKey);
 
     // 2. CÓDIGO SECRETO (Anti-Spam)
     const SECRET_CODE = "KEYAH2026"; 
@@ -273,14 +277,15 @@
                 const fileExt = qrFile.name.split('.').pop();
                 const fileName = `${rfc}_${Date.now()}.${fileExt}`;
 
-                const { error: uploadError } = await supabase.storage
+                // --- USAMOS 'client' EN LUGAR DE 'supabase' ---
+                const { error: uploadError } = await client.storage
                 .from('qrs')
                 .upload(fileName, qrFile);
                 
                 if (uploadError) throw uploadError;
                 
                 // Obtener URL
-                const { data: publicData } = supabase.storage
+                const { data: publicData } = await client.storage
                 .from('qrs')
                 .getPublicUrl(fileName);
                 
@@ -288,7 +293,8 @@
             }
 
             // D. Guardar Datos en Supabase
-            const { error: dbError } = await supabase
+            // --- USAMOS 'client' EN LUGAR DE 'supabase' ---
+            const { error: dbError } = await client
                 .from('organizaciones')
                 .insert([{
                     razon_social: formData.get('razon_social'),
