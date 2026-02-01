@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualización de Perfil | Keyah Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../style.css"> 
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'eco-bg': '#0F172A',
+                        'eco-surface': '#1E293B',
+                        'accent-social': '#38BDF8',
+                        'accent-dimo': '#10B981',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .input-dark {
+            background-color: #0F172A;
+            border: 1px solid #334155;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .input-dark:focus {
+            border-color: #38BDF8;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+            outline: none;
+        }
+        
+        .relative { position: relative; }
+        .input-group-label {
+            position: absolute;
+            left: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #64748B;
+            pointer-events: none;
+            z-index: 10;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.5rem;
+        }
+        .input-with-icon {
+            padding-left: 3.5rem !important;
+        }
+    </style>
+</head>
+<body class="bg-eco-bg text-slate-100 min-h-screen flex flex-col">
+
+<nav class="absolute w-full z-50 top-0 py-6">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <a href="https://arewalabs.com" class="text-2xl font-black tracking-tighter">
+            Arewa<span class="text-accent-social">Labs</span>
+        </a>
+        <div class="text-xs font-mono text-slate-400 border border-slate-700 px-3 py-1 rounded-full">
+            <i class="fa-solid fa-lock text-accent-dimo mr-2"></i>Encriptación SSL
+        </div>
+    </div>
+</nav>
+
+<div class="flex-grow pt-32 pb-20 px-6">
+    <div class="max-w-3xl mx-auto">
+        
+        <div class="text-center mb-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-blue-900/30 border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-wider mb-6">
+                <i class="fa-solid fa-check-circle"></i> Validación de Perfil 2026
+            </div>
+            <h1 class="text-3xl md:text-5xl font-black mb-4">Portal de Socios <span class="text-accent-social">Keyah</span></h1>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                Ya contamos con su validación legal (CEMEFI 2025).<br>
+                <span class="text-slate-300">Complete este formulario únicamente para activar sus <strong>canales de recaudación (CoDi/DiMo)</strong> y contacto digital.</span>
+            </p>
+        </div>
+
+        <form id="registroForm" class="space-y-8">
+
+            <div class="bg-eco-surface p-8 rounded-2xl border border-slate-700 shadow-xl">
+                <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-slate-700 text-sm">1</span>
+                    Identidad
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="col-span-2">
+                        <label class="block text-sm font-medium text-slate-400 mb-2">Razón Social (Oficial SAT)</label>
+                        <input type="text" name="razon_social" required class="input-dark w-full rounded-lg p-3">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">RFC</label>
+                        <input type="text" name="rfc" required class="input-dark w-full rounded-lg p-3 uppercase">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">CLUNI</label>
+                        <input type="text" name="cluni" required class="input-dark w-full rounded-lg p-3 uppercase" placeholder="Obligatorio">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-eco-surface p-8 rounded-2xl border border-slate-700 shadow-xl">
+                <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-slate-700 text-sm">2</span>
+                    Contacto Público (Para Donantes)
+                </h3>
+                <p class="text-xs text-slate-500 mb-6">Esta es la información que verán los usuarios en la App.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">Teléfono Oficina</label>
+                        <div class="relative">
+                            <div class="input-group-label"><i class="fa-solid fa-phone"></i></div>
+                            <input type="tel" name="tel_oficina" class="input-dark w-full rounded-lg p-3 input-with-icon" placeholder="(000) 000-0000">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">WhatsApp Oficial</label>
+                        <div class="relative">
+                            <div class="input-group-label text-green-500"><i class="fa-brands fa-whatsapp"></i></div>
+                            <input type="tel" name="whatsapp" class="input-dark w-full rounded-lg p-3 input-with-icon" placeholder="Celular de contacto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-slate-400 mb-2">Email de Contacto Público</label>
+                    <div class="relative">
+                        <div class="input-group-label"><i class="fa-regular fa-envelope"></i></div>
+                        <input type="email" name="email_publico" class="input-dark w-full rounded-lg p-3 input-with-icon" placeholder="info@asociacion.org">
+                    </div>
+                </div>
+
+                <label class="block text-sm font-medium text-slate-400 mb-2">Redes Sociales (Pegar enlaces completos)</label>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="relative">
+                        <div class="input-group-label"><i class="fa-solid fa-globe"></i></div>
+                        <input type="url" name="website" placeholder="https://www.sitio-web.org" class="input-dark w-full rounded-lg p-3 input-with-icon">
+                    </div>
+                    <div class="relative">
+                        <div class="input-group-label text-blue-500"><i class="fa-brands fa-facebook-f"></i></div>
+                        <input type="url" name="facebook" placeholder="https://facebook.com/pagina" class="input-dark w-full rounded-lg p-3 input-with-icon">
+                    </div>
+                    <div class="relative">
+                        <div class="input-group-label text-pink-500"><i class="fa-brands fa-instagram"></i></div>
+                        <input type="text" name="instagram" placeholder="@usuario_instagram" class="input-dark w-full rounded-lg p-3 input-with-icon">
+                    </div>
+                    <div class="relative">
+                        <div class="input-group-label text-slate-300"><i class="fa-brands fa-x-twitter"></i></div>
+                        <input type="url" name="twitter" placeholder="https://x.com/usuario" class="input-dark w-full rounded-lg p-3 input-with-icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-eco-surface p-8 rounded-2xl border border-accent-social/30 shadow-[0_0_20px_rgba(56,189,248,0.05)] relative">
+                <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-accent-social text-slate-900 text-sm font-bold">3</span>
+                    Canales de Recaudación
+                </h3>
+                 <p class="text-sm text-slate-400 mb-6">
+                    Configure cómo desea recibir el dinero. Puede activar uno o ambos.
+                </p>
+
+                <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700 mb-4">
+                    <h4 class="text-accent-social font-bold text-sm mb-3"><i class="fa-solid fa-qrcode mr-2"></i>Opción A: CoDi (Transferencia QR)</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-500 mb-1">CLABE Interbancaria (18 dígitos)</label>
+                            <input type="text" name="clabe" pattern="\d{18}" class="input-dark w-full rounded-lg p-2 font-mono text-sm" placeholder="000 000 0000000000 0">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-500 mb-1">O sube tu imagen QR de CoDi</label>
+                            <input type="file" name="qr_codi" accept="image/*" class="text-xs text-slate-400">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700">
+                    <h4 class="text-accent-dimo font-bold text-sm mb-3"><i class="fa-solid fa-mobile-screen mr-2"></i>Opción B: DiMo (Dinero Móvil)</h4>
+                    <p class="text-xs text-slate-500 mb-3">Si su cuenta bancaria está vinculada a un número celular para recibir DiMo, ingréselo aquí.</p>
+                    <div class="relative">
+                        <div class="input-group-label text-slate-500"><i class="fa-solid fa-hashtag"></i></div>
+                        <input type="tel" name="celular_dimo" class="input-dark w-full rounded-lg p-3 input-with-icon" placeholder="10 dígitos vinculados a banco">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-eco-surface p-8 rounded-2xl border border-slate-700 shadow-xl">
+                <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-slate-700 text-sm">4</span>
+                    Área Fiscal (Privado)
+                </h3>
+                
+                <div>
+                    <label class="block text-sm font-medium text-slate-400 mb-2">Email EXCLUSIVO para Facturación</label>
+                    <div class="relative">
+                        <div class="input-group-label text-yellow-500"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                        <input type="email" name="email_facturacion" required class="input-dark w-full rounded-lg p-3 input-with-icon" placeholder="facturacion@su-organizacion.org">
+                    </div>
+                    <p class="text-xs text-slate-500 mt-2 ml-1">
+                        * A este correo NO le escribirán los donantes. Solo llegarán notificaciones del sistema.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-600">
+                <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-lock text-accent-social"></i> Seguridad
+                </h3>
+                <div>
+                    <label class="block text-sm font-medium text-slate-400 mb-2">Código de Acceso</label>
+                    <input type="password" id="access_code" placeholder="Ingrese el código recibido por correo" 
+                           class="input-dark w-full rounded-lg p-3 border-accent-social/50 focus:border-accent-social outline-none">
+                    <p class="text-xs text-slate-500 mt-2">Lo encontrará en el correo de invitación (Ej: KEYAH...)</p>
+                </div>
+            </div>
+            <div class="pt-6 pb-12">
+                <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-accent-social hover:from-blue-500 hover:to-cyan-400 text-white font-bold py-4 rounded-xl shadow-lg transform transition hover:scale-[1.01] flex items-center justify-center gap-3">
+                    <span>Guardar y Actualizar Perfil</span>
+                    <i class="fa-solid fa-check"></i>
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+    // 1. CONFIGURACIÓN (Rellena esto mañana)
+    const supabaseUrl = 'https://ahjraveozlvkiamtpppy.supabase.co'; 
+    const supabaseKey = 'sb_publishable_P3lMcR-olq_NzWq5Qb4P2w_caDopNPK';
+    const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+    // 2. CÓDIGO SECRETO (Anti-Spam)
+    const SECRET_CODE = "KEYAH2026"; 
+
+    // 3. LÓGICA DE ENVÍO
+    document.getElementById('registroForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        // A. Validar Código de Acceso
+        const codeInput = document.getElementById('access_code');
+        if (codeInput.value.trim() !== SECRET_CODE) {
+            alert('⛔ Código de acceso incorrecto. Verifique su correo de invitación.');
+            codeInput.focus();
+            return;
+        }
+
+        // B. Bloquear botón
+        const submitBtn = e.target.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Guardando...';
+        submitBtn.disabled = true;
+
+        try {
+            const formData = new FormData(e.target);
+            const rfc = formData.get('rfc').toUpperCase().trim();
+            const qrFile = formData.get('qr_codi');
+            let qrPublicUrl = '';
+
+            // C. Subir QR (si existe)
+            if (qrFile && qrFile.size > 0) {
+                const fileExt = qrFile.name.split('.').pop();
+                const fileName = `${rfc}_${Date.now()}.${fileExt}`;
+
+                const { error: uploadError } = await supabase.storage
+                .from('qrs')
+                .upload(fileName, qrFile);
+                
+                if (uploadError) throw uploadError;
+                
+                // Obtener URL
+                const { data: publicData } = supabase.storage
+                .from('qrs')
+                .getPublicUrl(fileName);
+                
+                qrPublicUrl = publicData.publicUrl;
+            }
+
+            // D. Guardar Datos en Supabase
+            const { error: dbError } = await supabase
+                .from('organizaciones')
+                .insert([{
+                    razon_social: formData.get('razon_social'),
+                    rfc: rfc,
+                    cluni: formData.get('cluni'),
+                    telefono: formData.get('tel_oficina'),
+                    whatsapp: formData.get('whatsapp'),
+                    email: formData.get('email_publico'),
+                    website: formData.get('website'),
+                    facebook: formData.get('facebook'),
+                    instagram: formData.get('instagram'),
+                    twitter: formData.get('twitter'),
+                    clabe: formData.get('clabe'),
+                    dimo: formData.get('celular_dimo'),
+                    email_facturacion: formData.get('email_facturacion'),
+                    qr_url: qrPublicUrl
+                }]);
+
+            if (dbError) throw dbError;
+
+            // E. Éxito
+            window.location.href = "gracias.html";
+
+        } catch (error) {
+            console.error(error);
+            alert('Error al guardar: ' + error.message);
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        }
+    });
+</script>
+
+</body>
+</html>
